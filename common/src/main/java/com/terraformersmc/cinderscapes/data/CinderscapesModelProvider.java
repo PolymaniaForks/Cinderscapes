@@ -44,9 +44,6 @@ public class CinderscapesModelProvider extends FabricModelProvider {
         generator.createLogTexturePool(CinderscapesBlocks.SCORCHED_STEM).log(CinderscapesBlocks.SCORCHED_STEM).wood(CinderscapesBlocks.SCORCHED_HYPHAE);
         generator.createLogTexturePool(CinderscapesBlocks.STRIPPED_SCORCHED_STEM).log(CinderscapesBlocks.STRIPPED_SCORCHED_STEM).wood(CinderscapesBlocks.STRIPPED_SCORCHED_HYPHAE);
         // Item models missed by vanilla code
-        this.registerBlockItemModel(generator, CinderscapesBlocks.SCORCHED_FENCE_GATE);
-        this.registerBlockItemModel(generator, CinderscapesBlocks.SCORCHED_PLANKS);
-        this.registerBlockItemModel(generator, CinderscapesBlocks.SCORCHED_PRESSURE_PLATE);
 
         // Misc. vegetation
         generator.registerFlowerPotPlantAndItem(CinderscapesBlocks.SCORCHED_SHRUB, CinderscapesBlocks.POTTED_SCORCHED_SHRUB, BlockStateModelGenerator.CrossType.NOT_TINTED);
@@ -67,9 +64,9 @@ public class CinderscapesModelProvider extends FabricModelProvider {
                                         Optional.empty(), TextureKey.PARTICLE, TextureKey.TEXTURE)
                                         .upload(ModelIds.getBlockSubModelId(CinderscapesBlocks.ASH, "_height" + height * 2),
                                                 ashTexture, generator.modelCollector) :
-                                ashModelId))));*/
+                                ashModelId))));
         generator.registerParentedItemModel(CinderscapesBlocks.ASH, ModelIds.getBlockSubModelId(CinderscapesBlocks.ASH, "_height2"));
-        generator.blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(CinderscapesBlocks.ASH_BLOCK, ashModel));
+        generator.blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(CinderscapesBlocks.ASH_BLOCK, ashModel));*/
         this.registerBlockItemModel(generator, CinderscapesBlocks.ASH_BLOCK);
 
 
@@ -83,9 +80,6 @@ public class CinderscapesModelProvider extends FabricModelProvider {
         generator.createLogTexturePool(CinderscapesBlocks.STRIPPED_UMBRAL_STEM).log(CinderscapesBlocks.STRIPPED_UMBRAL_STEM).wood(CinderscapesBlocks.STRIPPED_UMBRAL_HYPHAE);
         generator.registerFlowerPotPlantAndItem(CinderscapesBlocks.UMBRAL_FUNGUS, CinderscapesBlocks.POTTED_UMBRAL_FUNGUS, BlockStateModelGenerator.CrossType.NOT_TINTED);
         // Item models missed by vanilla code
-        this.registerBlockItemModel(generator, CinderscapesBlocks.UMBRAL_FENCE_GATE);
-        this.registerBlockItemModel(generator, CinderscapesBlocks.UMBRAL_PLANKS);
-        this.registerBlockItemModel(generator, CinderscapesBlocks.UMBRAL_PRESSURE_PLATE);
 
         // Luminous Grove misc.
         generator.registerNetherrackBottomCustomTop(CinderscapesBlocks.UMBRAL_NYLIUM);
