@@ -56,6 +56,8 @@ public class CinderscapesModelProvider extends FabricModelProvider {
         // We have to make models inheriting from vanilla's hand-rolled snow models...
         TextureMap ashTexture = TextureMap.all(CinderscapesBlocks.ASH);
         Identifier ashModelId = Models.CUBE_ALL.upload(CinderscapesBlocks.ASH_BLOCK, ashTexture, generator.modelCollector);
+        WeightedVariant ashModel = BlockStateModelGenerator.createWeightedVariant(ashModelId);
+
         /*generator.blockStateCollector.accept(VariantsBlockStateSupplier.create(CinderscapesBlocks.ASH).coordinate(
                 BlockStateVariantMap.create(Properties.LAYERS).register(height -> BlockStateVariant.create()
                         .put(VariantSettings.MODEL,
@@ -64,9 +66,9 @@ public class CinderscapesModelProvider extends FabricModelProvider {
                                         Optional.empty(), TextureKey.PARTICLE, TextureKey.TEXTURE)
                                         .upload(ModelIds.getBlockSubModelId(CinderscapesBlocks.ASH, "_height" + height * 2),
                                                 ashTexture, generator.modelCollector) :
-                                ashModelId))));
+                                ashModelId))));*/
         generator.registerParentedItemModel(CinderscapesBlocks.ASH, ModelIds.getBlockSubModelId(CinderscapesBlocks.ASH, "_height2"));
-        generator.blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(CinderscapesBlocks.ASH_BLOCK, ashModel));*/
+        generator.blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(CinderscapesBlocks.ASH_BLOCK, ashModel));
         this.registerBlockItemModel(generator, CinderscapesBlocks.ASH_BLOCK);
 
 
