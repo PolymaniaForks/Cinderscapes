@@ -1,32 +1,13 @@
 package com.terraformersmc.cinderscapes.init;
 
-import com.terraformersmc.cinderscapes.Cinderscapes;
-import com.terraformersmc.cinderscapes.block.AshLayerBlock;
-import com.terraformersmc.cinderscapes.block.BrambleBerryBushBlock;
-import com.terraformersmc.cinderscapes.block.CinderscapesNetherPlantBlock;
-import com.terraformersmc.cinderscapes.block.CinderscapesNetherTallPlantBlock;
-import com.terraformersmc.cinderscapes.block.CinderscapesNyliumBlock;
-import com.terraformersmc.cinderscapes.block.CinderscapesOreBlock;
-import com.terraformersmc.cinderscapes.block.CinderscapesTransparentBlock;
-import com.terraformersmc.cinderscapes.block.CrystiniumBlock;
-import com.terraformersmc.cinderscapes.block.GhastlyEctoplasmBlock;
-import com.terraformersmc.cinderscapes.block.PhotofernBlock;
-import com.terraformersmc.cinderscapes.block.PolypiteQuartzBlock;
-import com.terraformersmc.cinderscapes.block.PottedCrystiniumBlock;
-import com.terraformersmc.cinderscapes.block.PottedPyracinthBlock;
-import com.terraformersmc.cinderscapes.block.PyracinthBlock;
+import com.terraformersmc.cinderscapes.block.*;
 import com.terraformersmc.cinderscapes.init.helpers.CinderscapesRegistry;
-import com.terraformersmc.terraform.sign.api.block.TerraformHangingSignBlock;
-import com.terraformersmc.terraform.sign.api.block.TerraformSignBlock;
-import com.terraformersmc.terraform.sign.api.block.TerraformWallHangingSignBlock;
-import com.terraformersmc.terraform.sign.api.block.TerraformWallSignBlock;
 import com.terraformersmc.terraform.wood.api.block.PillarLogHelper;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.entity.EntityType;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 
